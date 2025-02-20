@@ -5,8 +5,9 @@
 import sys
 
 if __name__ == '__main__':
-    top_ten = __import__('1-top_ten').top_ten
+    top_ten = __import__('1-top_ten').top_ten  # Import top_ten function from 1-top_ten.py
     if len(sys.argv) < 2:
         print("Please pass an argument for the subreddit to search.")
     else:
-        top_ten(sys.argv[1]))
+        top_ten(sys.argv[1])  # Call the top_ten function with the subreddit passed as an argument
+
